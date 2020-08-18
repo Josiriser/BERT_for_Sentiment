@@ -22,8 +22,8 @@ if __name__ == "__main__":
     train_dataset = makeDataset(train_data_feature)
     test_dataset = makeDataset(test_data_feature)
 
-    train_dataloader = DataLoader(train_dataset ,batch_size=4 ,shuffle=True)
-    test_dataloader = DataLoader(test_dataset ,batch_size=4 ,shuffle=True)
+    train_dataloader = DataLoader(train_dataset ,batch_size=16 ,shuffle=True)
+    test_dataloader = DataLoader(test_dataset ,batch_size=16 ,shuffle=True)
 
     model = BertForSequenceClassification.from_pretrained('bert-base-uncased')
     model.to(device)

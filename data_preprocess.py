@@ -11,19 +11,19 @@ def convert_data_to_feature(filename,taipe):
     label_list=[]
     i=0
     if taipe=='train':
-        pos_value=500000
+        pos_value=20000
     else:
-        pos_value=100000
+        pos_value=2000
     with open(filename,'r',newline="",encoding='utf-8') as csvfile:
         rows=csv.reader(csvfile)
 
         for row in rows:
             i+=1
             data_list.append(row[0])
-            if i<pos_value:
+            if i<=pos_value:
                 label_list.append(1)
             else:
-                label_list.append(-1)
+                label_list.append(0)
             
 
     assert len(data_list)==len(label_list)
