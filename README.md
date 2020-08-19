@@ -11,3 +11,9 @@
 ## 第三步驟
 
 可使用predict.py 來測試自己的model 
+
+# 若是想跳過訓練部分 
+
+## 先執行init.sh 下載已訓練好的model
+
+## 直接執行predict.py
