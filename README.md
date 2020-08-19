@@ -14,6 +14,5 @@
 
 # 若是想跳過訓練部分 
 
-## 先執行init.sh 下載已訓練好的model
-
-## 直接執行predict.py
+* 先執行init.sh 下載已訓練好的model
+* 直接執行predict.py
